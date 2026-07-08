@@ -57,7 +57,7 @@ class Quadrado(FormaGeometrica):
 # A variavel formas_geometricas armazena uma lista de figuras
 
 retangulo1 = Retangulo(4, 8)
-retangulo2 = Retangulo(6, 10)
+retaangulo2 = Retangulo(6, 10)
 quadrado1 = Quadrado(4)
 quadrado2 = Quadrado(6)
 circulo1 = Circulo(4)
