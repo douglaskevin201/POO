@@ -11,12 +11,12 @@ class Carro:
 
     def buscar_nome_descricao(self):
         """Devolve um nome descritivo, em formato elegante"""
-        nome_extenso = str(self.ano) + '' + self.fabricante + '' + self.modelo
+        nome_extenso = str(self.ano) + ' ' + self.fabricante + ' ' + self.modelo
         return nome_extenso.title()
     
     def ler_hodometro(self):
         """exibe uma frase que mostra a milhagem do carro"""
-        print("Esse carro tem " + str(self.leitura_hodometro)+ "milhas.")
+        print("Esse carro tem " + str(self.leitura_hodometro)+ " milhas.")
 
     def atualizar_hodometro(self, milhas):
         """define o valor da leitura do hodometro com o valor especificado 
@@ -29,12 +29,12 @@ class Carro:
 
     def abastecer_tanque(self, tanque):
         self.tanque = tanque 
-        print("Tanque atualizado para " + str(self.tanque) + "litros.")
+        print("Tanque atualizado para " + str(self.tanque) + " litros.")
 
 # Definição da classe CarroEletrico que herda da classe Carro
 class CarroEletrico(Carro):
     """Representa aspectos de um carro especifico de veiculos elétricos"""
-    def __ini__(self, fabricante, modelo, ano):
+    def __init__(self, fabricante, modelo, ano):
         super().__init__(fabricante, modelo, ano)
         self.bateria = Bateria() # Modificado aqui de self.bateria = 70 para self.bateria = Bateria()
 
