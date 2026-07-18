@@ -36,8 +36,8 @@ class Prduto(Base):
      UniqueConstraint('codigo', name='codigo_unico'), 
 )
 
-# Representação em string (opcional, mas recomendado)
-def __repr__(self):
-    return f"<Produto(id{self.id}, nome='{self.nome}', preco{self.preco})>"
+    # Representação em string (opcional, mas recomendado)
+    def __repr__(self):
+        return f"<Produto(id{self.id}, nome='{self.nome}', preco{self.preco})>"
 
 
